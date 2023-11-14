@@ -39,8 +39,8 @@ app.get("/api/:date", function(req, res) {
 
 app.get('/api', (req, res) => {
   res.json({
-    unix: date.getTime(),
-    utc: date.toUTCString()
+    unix: new Date().getTime(),
+    utc: new Date().toUTCString()
   })
 })
 
